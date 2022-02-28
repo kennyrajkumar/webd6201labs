@@ -1,0 +1,83 @@
+<!-- 
+  Name: Andrei Sorescu 100706779, Kenny Rajkumar 100616412
+  File: login.html 
+  Desc: HTML form for the "Login" page that allows the user to submit login credentials. 
+  Date: February 24, 2022 
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Lab 2: Login</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel = "stylesheet" type = "text/css" href = "./Content/app.css">
+    <script src="https://kit.fontawesome.com/29b92ba7c6.js" crossorigin="anonymous"></script>
+    <script src="./Scripts/app.js"></script>
+
+  </head>
+  <body>
+   <!-- Navigation Bar Items -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">WEBD6201 - Lesson 1</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a id="log-home" class="nav-item nav-link active" href="./index.html"><i class="fa-solid fa-house"></i> Home <span class="sr-only">(current)</span></a>
+          <a id="log-projects" class="nav-item nav-link" href="./products.html"><i class="fa-solid fa-grip"></i> Products</a>
+          <a id="log-services" class="nav-item nav-link" href="./services.html"><i class="fa-solid fa-bell"></i> Services</a>
+          <a id="log-about" class="nav-item nav-link" href="./about.html"><i class="fa-solid fa-circle-info"></i> About Us</a>
+          <a id="log-contact" class="nav-item nav-link" href="./contact.html"><i class="fa-solid fa-phone"></i> Contact Us</a>
+          <a id="log-login" class="nav-item nav-link" href="./login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a>
+        </div>
+      </div>
+    </nav>
+    <!-- div container for background -->
+    <div class="bg-image d-flex justify-content-center align-items-center" 
+      style="
+         background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+         height: 100vh">
+
+        <div class="card" style="width: 600px; height: 400px;">
+            <div id="log-header" class="card-header">
+            </div>
+            <!-- div container for content box and form -->
+            <div class="card-body">
+                <blockquote id="log-body" class="blockquote mb-0">
+                    <form onsubmit="event.preventDefault();">
+                        <div class="form-group" >
+
+                            <div class="input-icons">
+                                <i class="fa-solid fa-user icon"></i>
+                                <input type="text" class="input-field" id="input-user" aria-describedby="usernameHelp" placeholder="Enter your username">
+                            </div>
+
+                            <div class="input-icons">
+                                <i class="fa-solid fa-lock icon"></i>
+                                <input type="password" class="input-field" id="input-password" aria-describedby="passwordHelp" placeholder="Enter your password">
+                            </div>
+                        </div>
+                        <button id="btn-login" type="submit" class="btn btn-primary float-right" onclick="UserLogin()" style="font-size: 22px; padding: 15px 32px;">Login</button>
+                    </form>
+                </blockquote>
+            </div>
+            <div class="card-footer">
+              <p style="text-align: center; margin-top: 10px">Don't have an account? <a id="log-register" href="./register.html">Register here!</a></p>
+            </div>
+        </div>
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+

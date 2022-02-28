@@ -1,0 +1,96 @@
+<!-- 
+  Name: Andrei Sorescu 100706779, Kenny Rajkumar 100616412
+  File: register.html 
+  Desc: HTML form for the "Register" page that allows the user to register new login credentials. 
+  Date: February 24, 2022 
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Lab 2: Register</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel = "stylesheet" type = "text/css" href = "./Content/app.css">
+    <script src="https://kit.fontawesome.com/29b92ba7c6.js" crossorigin="anonymous"></script>
+
+    <script src="./Scripts/app.js"></script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+   <!-- Navigation Bar Items -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">WEBD6201 - Lesson 1</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a id="reg-home" class="nav-item nav-link active" href="./index.html"><i class="fa-solid fa-house"></i> Home <span class="sr-only">(current)</span></a>
+          <a id="reg-projects" class="nav-item nav-link" href="./products.html"><i class="fa-solid fa-grip"></i> Products</a>
+          <a id="reg-services" class="nav-item nav-link" href="./services.html"><i class="fa-solid fa-bell"></i> Services</a>
+          <a id="reg-about" class="nav-item nav-link" href="./about.html"><i class="fa-solid fa-circle-info"></i> About Us</a>
+          <a id="reg-contact" class="nav-item nav-link" href="./contact.html"><i class="fa-solid fa-phone"></i> Contact Us</a>
+          <a id="reg-login" class="nav-item nav-link" href="./login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</a>
+        </div>
+      </div>
+    </nav>
+    <!-- div container for background -->
+    <div class="bg-image d-flex justify-content-center align-items-center" 
+      style="
+         background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+         height: 100vh">
+
+        <div class="card" style="width: 900px; height: 700px;">
+            <div id="reg-header" class="card-header">
+            </div>
+            <div id="reg-subheader" class="card-title">
+            </div>
+            <!-- div container for content box and form -->
+            <div class="card-body">
+                <blockquote id="reg-body" class="blockquote mb-0">
+                    <form id="reg-form" onsubmit="event.preventDefault();" >
+                        <div class="form-group" id="register-div">
+                            <div style="display: table">
+                                <div style="display: table-cell; padding: 10px">
+                                    <input type="text" class="input-field" id="input-firstName" aria-describedby="firstNameHelp" placeholder="First name" onkeyup="ValidateFirstName()">
+                                </div>
+
+                                <div style="display: table-cell; padding: 10px">
+                                    <input type="text" class="input-field" id="input-lastName" aria-describedby="lastNameHelp" placeholder="Last name" onkeyup="ValidateLastName()">
+                                </div>
+                            </div>
+                            <div class="form-group" style="padding: 10px">
+                                <input type="email" class="input-field" id="input-email" aria-describedby="emailHelp" placeholder="Email" onkeyup="ValidateEmail()">
+                            </div>
+                            <div class="form-group" style="padding: 10px">
+                                <input type="password" class="input-field" id="input-password" aria-describedby="passwordHelp" placeholder="Password" onkeyup="ValidatePassword()">
+                            </div>
+                            <div class="form-group" style="padding: 10px">
+                                <input type="password" class="input-field" id="input-confirm-pass" aria-describedby="confirmPasswordHelp" placeholder="Confirm Password" onkeyup="ValidateConfirm()">
+                            </div>
+                            <button id="btn-login" type="submit" class="btn btn-primary float-right" onclick="SubmitForm()" style="font-size: 22px; padding: 15px 32px;">Register</button>
+                        </div>
+                    </form>
+                </blockquote>
+            </div>
+            <div class="card-footer">
+                <p style="text-align: center; margin-top: 10px">Already have an account? <a id="log-register" href="./login.html">Sign in!</a></p>
+            </div>
+        </div>
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+

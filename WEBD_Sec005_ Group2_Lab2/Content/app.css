@@ -1,0 +1,54 @@
+/*
+
+  Name: Andrei Sorescu 100706779, Kenny Rajkumar 100616412
+  File: app.css
+  Desc: Cascading Style Sheet for our WEBD6201 Website 
+  Date: February 11, 2022 
+
+*/
+
+  .card {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 1000;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+
+.input-icons {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  min-width: 50px;
+  margin-top: 5px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+}
+
+.card-title {
+  padding: 10px;
+  margin-left: 14px;
+}
+
+.error-message {
+  padding: 10px;
+  font-size: 24px;
+}
